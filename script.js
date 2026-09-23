@@ -65,12 +65,126 @@ const galleryData = {
       ],
     },
   },
-  IcyCrystal: { path: "assets/icons/IcyCrystal", galleries: {} },
-  ImXR24: { path: "assets/icons/ImXR24", galleries: {} },
-  LarsMans: { path: "assets/icons/LarsMans", galleries: {} },
-  MiffenKop: { path: "assets/icons/MiffenKop", galleries: {} },
-  Mojang: { path: "assets/icons/Mojang", galleries: {} },
-  ommer15: { path: "assets/icons/ommer15", galleries: {} },
+  IcyCrystal: {
+    path: "assets/icons/IcyCrystal",
+    galleries: {
+      Isometric: [
+        "AetherIcon.png",
+        "AtmosphericIcon.png",
+        "BiomesOPlentyIcon.png",
+        "BTAIcon.png",
+        "BuzzierBeesIcon.png",
+        "CavernChasmIcon.png",
+        "ClayworksIcon.png",
+        "EndergeticIcon.png",
+        "FarmersDelightIcon.png",
+        "GoldenHeightsIcon.png",
+        "MCDivergeIcon.png",
+        "MidnightIcon.png",
+        "MiningMasterIcon.png",
+        "MyceliumIcon.png",
+        "NeapolitanIcon.png",
+        "NightstoneBrickIcon.png",
+        "NightstoneIcon.png",
+        "OreganizedIcon.png",
+        "RouxeIcon.png",
+        "saguaro_stem.png",
+        "SavageRavageIcon.png",
+        "SmithingTableIcon.png",
+        "stripped_saguaro_stem.png",
+        "TransitionalIcon.png",
+        "UpgradeAquaticIcon.png",
+      ],
+    },
+  },
+  ImXR24: {
+    path: "assets/icons/ImXR24",
+    galleries: {
+      Isometric: [
+        "tiny_amethyst.png",
+        "tiny_cherry_leaves.png",
+        "tiny_cherry_log.png",
+        "tiny_cobblestone.png",
+        "tiny_compact_chorus.png",
+        "tiny_diamond_ore.png",
+        "tiny_flaming_soulslite_bricks.png",
+        "tiny_oak_planks.png",
+      ],
+    },
+  },
+  LarsMans: {
+    path: "assets/icons/LarsMans",
+    galleries: {
+      Dimetric: [
+        "bedrock.png",
+        "crafting_table.png",
+        "deepslate_diamond_ore.png",
+        "dirt.png",
+        "enchanting_table.png",
+        "furnace.png",
+        "grass.png",
+        "hay_bale.png",
+        "iron_block.png",
+        "sculk_catalyst.png",
+        "tnt4.png",
+      ],
+      Isometric: [
+        "amethyst_iso.png",
+        "bedrock_iso.png",
+        "chromatic_iron_block_iso.png",
+        "crafting_table_iso.png",
+        "deepslate_diamond_ore_iso.png",
+        "enchanting_table_iso3.png",
+        "end_portal_frame_iso_eye.png",
+        "end_portal_frame_iso.png",
+        "furnace_iso.png",
+        "hay_bale_iso.png",
+        "iron_block_iso.png",
+        "safety_button.png",
+        "scaffolding_centered.png",
+        "scaffolding2.png",
+        "sculk_catalyst_iso.png",
+        "separated_leaves_log.png",
+        "sniffer_egg_iso.png",
+        "tnt_iso.png",
+      ],
+    },
+  },
+  MiffenKop: {
+    path: "assets/icons/MiffenKop",
+    galleries: {
+      Isometric: [
+        "Cake Icon.png",
+        "CarvedPumpkin Icon.png",
+        "Decorated Pot.png",
+        "Faithful Grass Block Icon.png",
+        "Faithful Grass Block Icon 2.png",
+        "Greatwood Icon.png",
+        "Greatwood Icon 2.png",
+        "Mogswomp Icon.png",
+        "Nuclear Bomb Icon.png",
+        "Nuclear Bomb Icon 2.png",
+        "Pale Oak Log Icon.png",
+        "Pale Oak Log Resin Icon.png",
+        "PortalHelper Icon.png",
+        "PortalHelper Icon 2.png",
+        "Pumpkin Icon.png",
+        "Sponge Icon.png",
+      ],
+    },
+  },
+  Mojang: {
+    path: "assets/icons/Mojang",
+    galleries: {
+      Isometric: [
+        "Bookshelf alt.png",
+        "Bookshelf.png",
+        "dirt_iso.png",
+        "grass_iso.png",
+      ],
+    },
+  },
+  ommer15: { path: "assets/icons/ommer15", galleries: {Isometric: ["noteblock.png"]} },
 };
 
 const categoryPaths = {
@@ -118,7 +232,7 @@ const createAuthorSection = (author, { galleries }) => {
   section.id = `by_${author}`;
 
   const heading = document.createElement("h2");
-  heading.textContent = `Icons by ${author}`;
+  heading.textContent = `By ${author}`;
   section.appendChild(heading);
 
   Object.entries(galleries).forEach(([category, imageFiles]) => {
