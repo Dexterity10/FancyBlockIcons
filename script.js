@@ -1,5 +1,5 @@
 const galleryData = {
-  axialeaa: {
+  Axialeaa: {
     path: "assets/icons/axialeaa",
     galleries: {
       Isometric: [
@@ -47,7 +47,24 @@ const galleryData = {
     },
   },
 
-  Cubeoidal: { path: "assets/icons/Cubeoidal", galleries: {} },
+  Cubeoidal: {
+    path: "assets/icons/Cubeoidal",
+    galleries: {
+      Isometric: [
+        "barrel.png",
+        "chest.png",
+        "crimson_nylium.png",
+        "deepslate_bricks.png",
+        "deepslate_tiles.png",
+        "dripstone.png",
+        "ender_chest.png",
+        "melon.png",
+        "netherrack.png",
+        "slime_block.png",
+        "warped_nylium.png",
+      ],
+    },
+  },
   IcyCrystal: { path: "assets/icons/IcyCrystal", galleries: {} },
   ImXR24: { path: "assets/icons/ImXR24", galleries: {} },
   LarsMans: { path: "assets/icons/LarsMans", galleries: {} },
